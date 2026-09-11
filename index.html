@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Что приготовить? — Рецепты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <h1 class="logo"><a href="index.html">🍳 Что приготовить?</a></h1>
+            <input type="text" id="searchInput" class="search" placeholder="Поиск рецепта...">
+            <div id="authBlock"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+
+            <section class="hero">
+                <h2>Готовь с удовольствием!</h2>
+                <p>Более 12 проверенных рецептов на каждый день. Сохраняй любимые в избранное и делись своими.</p>
+                <a href="add-recipe.html" class="btn">➕ Добавить свой рецепт</a>
+            </section>
+
+            <section class="filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="breakfast">Завтрак</button>
+                <button class="filter-btn" data-category="dinner">Обед</button>
+                <button class="filter-btn" data-category="dessert">Десерт</button>
+                <button class="filter-btn" data-category="drinks">Напитки</button>
+            </section>
+
+            <div id="recipeGrid" class="recipe-grid"></div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Что приготовить? — учебный проект</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
