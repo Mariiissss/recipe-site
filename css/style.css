@@ -800,3 +800,18 @@ header h1 {
     color: #666;
     font-size: 14px;
 }
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--color-text-light);
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.back-link:hover {
+  color: var(--color-primary);
+}
+
+.recipe-header__actions .btn {
+  white-space: nowrap;
+}
