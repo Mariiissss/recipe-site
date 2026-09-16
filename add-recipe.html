@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Добавить рецепт — Что приготовить?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__inner">
+            <h1 class="logo"><a href="index.html">🍳 Что приготовить?</a></h1>
+            <div id="authBlock"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container" style="max-width: 720px;">
+            <h1 style="margin-bottom: 8px;">Добавить рецепт</h1>
+            <p style="color: var(--color-text-light); margin-bottom: 24px;">
+                Поделитесь своим любимым рецептом с сообществом
+            </p>
+
+            <div class="form-error" id="errorBox"></div>
+
+            <form id="addRecipeForm" class="recipe-section">
+
+                <div class="form-group">
+                    <label for="title">Название рецепта *</label>
+                    <input type="text" id="title" required placeholder="Например: Шарлотка с яблоками">
+                </div>
+
+                <div class="form-group">
+                    <label for="image">Ссылка на фото</label>
+                    <input type="url" id="image" placeholder="https://...">
+                    <small style="color: var(--color-text-light); font-size: 12px;">
+                        Вставьте ссылку на картинку из интернета
+                    </small>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label for="category">Категория *</label>
+                        <select id="category" required>
+                            <option value="">— выберите —</option>
+                            <option value="breakfast">Завтрак</option>
+                            <option value="dinner">Обед</option>
+                            <option value="dessert">Десерт</option>
+                            <option value="drinks">Напитки</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="difficulty">Сложность *</label>
+                        <select id="difficulty" required>
+                            <option value="easy">Легко</option>
+                            <option value="medium">Средне</option>
+                            <option value="hard">Сложно</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                    <div class="form-group">
+                        <label for="time">Время готовки (мин) *</label>
+                        <input type="number" id="time" min="1" required placeholder="30">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="servings">Порции *</label>
+                        <input type="number" id="servings" min="1" required placeholder="2">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Ингредиенты *</label>
+                    <div id="ingredientsList"></div>
+                    <button type="button" class="btn btn--ghost" id="addIngredient" style="margin-top: 8px;">
+                        ➕ Добавить ингредиент
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label>Шаги приготовления *</label>
+                    <div id="stepsList"></div>
+                    <button type="button" class="btn btn--ghost" id="addStep" style="margin-top: 8px;">
+                        ➕ Добавить шаг
+                    </button>
+                </div>
+
+                <div style="display: flex; gap: 12px; margin-top: 24px;">
+                    <button type="submit" class="btn btn--primary">Сохранить рецепт</button>
+                    <a href="index.html" class="btn btn--ghost">Отмена</a>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Что приготовить? — учебный проект</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/add-recipe.js"></script>
+</body>
+</html>
