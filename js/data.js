@@ -35,7 +35,7 @@ const DEFAULT_RECIPES = [
     difficulty: "easy",
     rating: 4.8,
     servings: 3,
-    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600",
+    image: "https://cdn.food.ru/unsigned/fit/640/480/ce/0/czM6Ly9tZWRpYS9waWN0dXJlcy8yMDI1MDIxNy9KSG45TTcuanBlZw.webp",
     ingredients: [
       "400 г творога",
       "1 яйцо",
@@ -60,7 +60,7 @@ const DEFAULT_RECIPES = [
     difficulty: "easy",
     rating: 4.2,
     servings: 1,
-    image: "https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=600",
+    image: "https://images.gastronom.ru/YZNj8OojvamFNnLZiJGNLZLoB1Eypy9vnLmC6DhSd6U/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzLzhjYmY0ZjMxLWVmMTctNDk3MS1hMWI2LTQwMjA2NThkMGJhOS5qcGc.webp",
     ingredients: [
       "50 г овсяных хлопьев",
       "200 мл молока",
@@ -83,7 +83,7 @@ const DEFAULT_RECIPES = [
     difficulty: "medium",
     rating: 4.9,
     servings: 6,
-    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=600",
+    image: "https://e3.edimdoma.ru/data/recipes/0015/5389/155389-ed4_big_wide.jpg?1787241043",
     ingredients: [
       "500 г говядины",
       "2 свёклы",
